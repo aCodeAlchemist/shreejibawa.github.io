@@ -1,1 +1,41 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en" ng-app="portfolio">
+	<head>
+		<meta charset="utf-8">
+		<title>Shreeji Shah Portfolio</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="stylesheet" href="css/bootstrap.css" media="screen">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/angular.min.js"></script>
+		<script src="js/ui-bootstrap-tpls.min.js"></script>
+		<script src="ng/app.js"></script>
+		<!--//--><!--[if lt IE 9]><script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
+		<script src="../bower_components/respond/dest/respond.min.js"></script> <![endif]-->
+	</head>
+	<body>
+		<div class="container" ng-controller="portfolioCtrl">
+			<div class="row">
+				<div class="col-lg-12 col-md-7 col-sm-6">
+					<div class="page-header" id="banner">
+						<h1>Agile Infoways Portfolio</h1>
+						<p class="lead">Last Updated : Today</p>
+					</div>
+					<accordion close-others="oneAtATime" ng-if="showContent">
+						<accordion-group ng-repeat="tech in data" is-open="tech.isOpen">
+							<accordion-heading> {{tech.tech_name}} <i class="pull-right fa fa-angle-right" ng-class="{'fa fa-angle-down': tech.isOpen, 'fa fa-angle-right': !tech.isOpen}"></i>
+							</accordion-heading>
+							<ul ng-if="tech.projects.length > 0">
+								<li ng-repeat="project in tech.projects">
+									<a href="{{project.url}}" target="_blank">{{project.name}}</a>
+								</li>
+							</ul>
+						</accordion-group>
+					</accordion>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
