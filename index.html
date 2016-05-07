@@ -1,41 +1,66 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="portfolio">
-	<head>
-		<meta charset="utf-8">
-		<title>Shreeji Shah Portfolio</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<link rel="stylesheet" href="css/bootstrap.css" media="screen">
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-		<script src="js/jquery-1.10.2.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/angular.min.js"></script>
-		<script src="js/ui-bootstrap-tpls.min.js"></script>
-		<script src="ng/app.js"></script>
-		<!--//--><!--[if lt IE 9]><script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
-		<script src="../bower_components/respond/dest/respond.min.js"></script> <![endif]-->
-	</head>
-	<body>
-		<div class="container" ng-controller="portfolioCtrl">
-			<div class="row">
-				<div class="col-lg-12 col-md-7 col-sm-6">
-					<div class="page-header" id="banner">
-						<h1>Shreeji Shah Portfolio</h1>
-						<p class="lead">Last Updated : Today</p>
-					</div>
-					<accordion close-others="oneAtATime" ng-if="showContent">
-						<accordion-group ng-repeat="tech in data" is-open="tech.isOpen">
-							<accordion-heading> {{tech.tech_name}} <i class="pull-right fa fa-angle-right" ng-class="{'fa fa-angle-down': tech.isOpen, 'fa fa-angle-right': !tech.isOpen}"></i>
-							</accordion-heading>
-							<ul ng-if="tech.projects.length > 0">
-								<li ng-repeat="project in tech.projects">
-									<a href="{{project.url}}" target="_blank">{{project.name}}</a>
-								</li>
-							</ul>
-						</accordion-group>
-					</accordion>
+<html>
+
+<head>
+	<title>Full Stack Developer, Music Junkie, An Aesthete, So Ready To Help</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-4">
+				<h3><i class="fa fa-code" aria-hidden="true"></i> Currently:</h3>
+				<hr>
+				<div class="sqs-block-content">
+					<p><strong>Full Stack Developer at <a href="https://skillvo.com">Skillvo</a></strong></p>
+					<p>&nbsp;</p>
+					<h3>Projects:</h3>
+					<ul>
+						<li><a href="https://trancelectron.in" target="_blank">Trancelectron.in</a>&nbsp;<em>-&nbsp;</em>Get the best music.</li>
+					</ul>
+					<p>&nbsp;</p>
+					<h3>Shoot me an email or ask me anything:</h3>
+					<p><a href="mailto:hey@jayshah.guru">hey@jayshah.guru</a></p>
+					<p>&nbsp;</p>
+					<h3>Elsewhere:</h3>
+					<a class="external-profile" href="https://github.com/shreejibawa" target="_blank">
+						<i class="fa fa-github-alt" aria-hidden="true"></i>
+					</a>
+					<a class="external-profile" href="http://in.linkedin.com/in/shreejibawa" target="_blank">
+						<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+					</a>
+					<a class="external-profile" href="http://stackoverflow.com/users/2157600/shreejibawa" target="_blank">
+						<i class="fa fa-stack-overflow" aria-hidden="true"></i>
+					</a>
+					<a class="external-profile" href="https://www.facebook.com/aceofblackheart" target="_blank">
+						<i class="fa fa-facebook-square" aria-hidden="true"></i>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<h3><i class="fa fa-bolt" aria-hidden="true"></i> APIs:</h3>
+				<hr>
+				<div class="sqs-block-content">
+					Coming soon.
+				</div>
+			</div>
+			<div class="col-md-4">
+				<h3><i class="fa fa-cogs" aria-hidden="true"></i> Tools:</h3>
+				<hr>
+				<div class="sqs-block-content">
+					<ul>
+						<li><a href="http://tools.webmpires.net/easy-subs/">Easy Subs</a>&nbsp;<em>-&nbsp;</em>Download Subtitles Easily</li>
+					</ul>
 				</div>
 			</div>
 		</div>
-	</body>
+	</div>
+</body>
+
 </html>
