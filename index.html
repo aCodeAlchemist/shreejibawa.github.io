@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="github" ng-controller="mainCtrl">
 
 <head>
 	<title>Full Stack Developer, Music Junkie, An Aesthete, So Ready To Help</title>
@@ -19,7 +19,16 @@
 	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=235545399938246";
 	  fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
-	<meta name="google-site-verification" content="wRn6K-BqFHyvkt3bhLqsnjzlkksRzbrWFQ9eZgNpqI4" />
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-40306670-2', 'auto');
+	  // ga('send', 'pageview');
+
+	</script>
 </head>
 
 <body>
@@ -31,7 +40,7 @@
 				<ul>
 					<li>NodeJS ExpressJS MongoDB Starter App - 
 						<a href="http://shreejibawa.github.io/node-expressjs-mongodb-quickstarter" target="_blank">Doc</a>
-						<a href="https://github.com/shreejibawa/node-expressjs-mongodb-quickstarter" target="_blank">Clone</a>
+						<a href="https://github.com/shreejibawa/node-expressjs-mongodb-quickstarter" target="_blank" ng-click="track('node-expressjs-mongodb-quickstarter', 'Github')">Clone</a>
 					</li>
 				</ul>
 			</div>
@@ -44,12 +53,12 @@
 				<h3><i class="fa fa-cogs" aria-hidden="true"></i> Tools:</h3>
 				<hr>
 				<ul>
-					<li><a href="http://tools.webmpires.net/easy-subs/">Easy Subs</a>&nbsp;<em>-&nbsp;</em>Download Subtitles Easily</li>
+					<li><a href="http://tools.webmpires.net/easy-subs/" ng-click="track('Went to Easy Subs', 'Tools')">Easy Subs</a>&nbsp;<em>-&nbsp;</em>Download Subtitles Easily</li>
 				</ul>
 			</div>
 			<div class="col-md-4 col-md-offset-4">
 					<h3>Shoot me an email or ask me anything:</h3>
-					<p><a href="mailto:hey@jayshah.guru">hey@jayshah.guru</a></p>
+					<p><a href="mailto:hey@jayshah.guru" ng-click="track('Tried to send email', 'Misc')">hey@jayshah.guru</a></p>
 					<p>&nbsp;</p>
 					
 					<a class="github-button" href="https://github.com/shreejibawa" data-count-href="/shreejibawa/followers" data-count-api="/users/shreejibawa#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @shreejibawa on GitHub">Follow @shreejibawa</a></p>
@@ -68,6 +77,10 @@
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript" src="https://code.angularjs.org/1.5.5/angular.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angulartics/1.0.3/angulartics.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angulartics-google-analytics/0.1.4/angulartics-google-analytics.min.js"></script>
+	<script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 
 </html>
