@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html ng-app="github" ng-controller="mainCtrl">
+
+<head>
+    <title>Quick start app development, fun APIs, useful creative tools</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quickly Start Web Application development in various technologies, Fun APIs, Useful Tools">
+    <meta name="keywords" content="Node, Socket.io, Mongodb, Angularjs, PHP, Quick Start Apps, Fun APIs, Useful tools">
+    <meta property="og:title" content="Quickly start web application app development, fun APIs, useful creative tools">
+    <meta property="og:description" content="Collection of quick start apps, fun apis and useful tools, start development quickly with provided quick start apps, havw fun with tools">
+    <meta ng-if="seo.facebookImg" property="og:image" content="http://shreejibawa.github.io/assets/images/art.jpg">
+    <meta property="og:site_name" content="shreejibawa.github.io">
+    <meta property="og:url" content="http://shreejibawa.github.io">
+    <meta property="og:url" content="http://shreejibawa.github.io">
+    <meta property="fb:app_id" content="1641417712850691">
+    <link rel="icon" type="image/ico" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="http://propeller.in/assets/css/propeller.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <script>
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=235545399938246";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script async defer id="github-bjs" src="http://buttons.github.io/buttons.js"></script>
+    <div id="fb-root"></div>
+    <script>
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=235545399938246";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'http://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-77767637-1', 'auto');
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse pmd-navbar pmd-z-depth">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+		
+        <div class="navbar-header">
+          <button class="pmd-ripple-effect navbar-toggle pmd-navbar-toggle" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="/" class="navbar-brand navbar-brand-custome">Jay Shah</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse pmd-navbar-sidebar">
+	      <ul class="nav navbar-nav">
+            <li class="active"><a class="pmd-ripple-effect" href="tools.html">Tools <span class="sr-only">(current)</span></a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="pmd-ripple-effect" href="contact.html">Contact</a></li>
+		  </ul>
+		  
+        </div><!-- /.navbar-collapse -->
+		
+      </div><!-- /.container-fluid -->
+	  <div class="pmd-sidebar-overlay"></div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="pmd-card pmd-card-default pmd-z-depth pmd-card-custom-form">
+                    <div class="pmd-card-title">
+                        <h3 class="pmd-card-title-text"><i class="fa fa-cogs" aria-hidden="true"></i> Tools:</h3>
+                    </div>
+	                <div class="pmd-card-body">
+	                    <ul>
+	                        <li><a href="http://tools.webmpires.net/easy-subs/" ng-click="track('Went to Easy Subs', 'Tools')">Easy Subs</a>&nbsp;<em>-&nbsp;</em>Download Subtitles Easily</li>
+	                    </ul>
+	                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="http://propeller.in/assets/js/jquery.js"></script>
+    <script type="text/javascript" src="http://propeller.in/assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="http://propeller.in/assets/js/propeller.js"></script>
+    <script type="text/javascript" src="http://code.angularjs.org/1.5.5/angular.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/angulartics/1.0.3/angulartics.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/angulartics-google-analytics/0.1.4/angulartics-google-analytics.min.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+
+</html>
