@@ -77,6 +77,7 @@
         <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse pmd-navbar-sidebar">
 	      <ul class="nav navbar-nav">
             <li class="active"><a class="pmd-ripple-effect" href="tools.html">Tools <span class="sr-only">(current)</span></a></li>
+            <li><a href="javascript:void(0)" class="pmd-ripple-effect" data-target="#complete-dialog" data-toggle="modal">Hire Me</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a class="pmd-ripple-effect" href="contact.html">Contact</a></li>
@@ -87,6 +88,9 @@
       </div><!-- /.container-fluid -->
 	  <div class="pmd-sidebar-overlay"></div>
     </nav>
+    
+    <ng-include src="'views/modals.html'"></ng-include>
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
